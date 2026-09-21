@@ -1,8 +1,9 @@
 Using the AutoExposure mode of Scopesim to find DIT times for different observing modes of Metis. 
+Results are in the "pretty_tables" directory.
 
 The WCU is not changed from its defaults, which are printed in "check_wcu_defaults.ipynb". When I ran this, every mode used the blackbody lamp at 1000 K.
 
-The jupyter notebooks output csv files, which are then formatted by format_table.ipynb, which turns them into markdown tables with nicer column names and rounding of numbers to a nice number of decimal places. (This requires the "tabulate" python package.)
+The jupyter notebooks output csv files, which are then formatted by make_pretty_table.ipynb, which turns them into markdown tables with nicer column names and rounding of numbers to a nice number of decimal places. (This requires the "tabulate" python package.)
 
 When DIT < MINDIT, the "MINDIT Hit" column is set to True, and the value in the "DIT" column is MINDIT.
 In this case, a value is also added to the "Attempted DIT" column, which was the original
